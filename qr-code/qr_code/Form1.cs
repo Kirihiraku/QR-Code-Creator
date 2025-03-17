@@ -21,24 +21,20 @@ namespace qr_code
         private void InitializeCustomControls()
         {
             // Кнопка для выбора цвета
-            Button colorButton = new Button { Text = "Выбрать цвет", Location = new Point(10, 10) };
-            colorButton.Click += ColorButton_Click;
-            Controls.Add(colorButton);
+
 
             // NumericUpDown для выбора размера
             sizeSelector = new NumericUpDown
             {
-                Location = new Point(50, 410),
+                Location = new Point(145, 500),
                 Minimum = 1,
-                Maximum = 1000,
+                Maximum = 100,
                 Value = 80 // Значение по умолчанию
             };
             Controls.Add(sizeSelector);
 
             // Кнопка для генерации QR-кода
-            Button generateButton = new Button { Text = "Сгенерировать QR-код", Location = new Point(10, 70) };
-            generateButton.Click += GenerateButton_Click;
-            Controls.Add(generateButton);
+
         }
 
         private void ColorButton_Click(object sender, EventArgs e)
