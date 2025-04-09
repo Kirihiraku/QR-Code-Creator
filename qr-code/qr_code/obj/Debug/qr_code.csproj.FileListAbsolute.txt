@@ -44,3 +44,27 @@ N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Курсова�
 N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Курсовая\Программа\qr-code\qr_code\obj\Debug\qr_code.csproj.CopyComplete
 N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Курсовая\Программа\qr-code\qr_code\obj\Debug\qr_code.exe
 N:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Курсовая\Программа\qr-code\qr_code\obj\Debug\qr_code.pdb
+Z:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Курсовая\Программа\qr-code\qr_code\bin\Debug\qr_code.exe.config
+Z:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Курсовая\Программа\qr-code\qr_code\bin\Debug\qr_code.exe
+Z:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Курсовая\Программа\qr-code\qr_code\bin\Debug\qr_code.pdb
+Z:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Курсовая\Программа\qr-code\qr_code\bin\Debug\MessagingToolkit.QRCode.dll
+Z:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Курсовая\Программа\qr-code\qr_code\obj\Debug\qr_code.csproj.AssemblyReference.cache
+Z:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Курсовая\Программа\qr-code\qr_code\obj\Debug\qr_code.Form1.resources
+Z:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Курсовая\Программа\qr-code\qr_code\obj\Debug\qr_code.Properties.Resources.resources
+Z:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Курсовая\Программа\qr-code\qr_code\obj\Debug\qr_code.csproj.GenerateResource.cache
+Z:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Курсовая\Программа\qr-code\qr_code\obj\Debug\qr_code.csproj.CoreCompileInputs.cache
+Z:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Курсовая\Программа\qr-code\qr_code\obj\Debug\qr_code.csproj.Up2Date
+Z:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Курсовая\Программа\qr-code\qr_code\obj\Debug\qr_code.exe
+Z:\3 курс\31 ИСП new\_2 Подгруппа\Сергеев\Курсовая\Программа\qr-code\qr_code\obj\Debug\qr_code.pdb
+D:\Программирование\Kursovaya-main\Программа\qr-code\qr_code\bin\Debug\qr_code.exe.config
+D:\Программирование\Kursovaya-main\Программа\qr-code\qr_code\bin\Debug\qr_code.exe
+D:\Программирование\Kursovaya-main\Программа\qr-code\qr_code\bin\Debug\qr_code.pdb
+D:\Программирование\Kursovaya-main\Программа\qr-code\qr_code\bin\Debug\MessagingToolkit.QRCode.dll
+D:\Программирование\Kursovaya-main\Программа\qr-code\qr_code\obj\Debug\qr_code.csproj.AssemblyReference.cache
+D:\Программирование\Kursovaya-main\Программа\qr-code\qr_code\obj\Debug\qr_code.Form1.resources
+D:\Программирование\Kursovaya-main\Программа\qr-code\qr_code\obj\Debug\qr_code.Properties.Resources.resources
+D:\Программирование\Kursovaya-main\Программа\qr-code\qr_code\obj\Debug\qr_code.csproj.GenerateResource.cache
+D:\Программирование\Kursovaya-main\Программа\qr-code\qr_code\obj\Debug\qr_code.csproj.CoreCompileInputs.cache
+D:\Программирование\Kursovaya-main\Программа\qr-code\qr_code\obj\Debug\qr_code.csproj.Up2Date
+D:\Программирование\Kursovaya-main\Программа\qr-code\qr_code\obj\Debug\qr_code.exe
+D:\Программирование\Kursovaya-main\Программа\qr-code\qr_code\obj\Debug\qr_code.pdb

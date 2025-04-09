@@ -8,32 +8,32 @@ namespace qr_code
 {
     public partial class Form1 : Form
     {
-        private Color qrColor = Color.Black; // Цвет QR-кода
-        private NumericUpDown sizeSelector; // Элемент управления для выбора размера
+        private Color qrColor = Color.Black; 
+        private NumericUpDown sizeSelector; 
 
         public Form1()
         {
             InitializeComponent();
-            // Инициализация элементов управления для выбора цвета и размера
             InitializeCustomControls();
         }
-
+        private TextBox userTextBox;
         private void InitializeCustomControls()
         {
-            // Кнопка для выбора цвета
+            userTextBox = new TextBox
+            {
+                Location = new Point(205, 550),
+                Width = 120,
+            };
+            Controls.Add(userTextBox);
 
-
-            // NumericUpDown для выбора размера
             sizeSelector = new NumericUpDown
             {
-                Location = new Point(145, 500),
+                Location = new Point(205, 500),
                 Minimum = 1,
                 Maximum = 100,
                 Value = 80 // Значение по умолчанию
             };
             Controls.Add(sizeSelector);
-
-            // Кнопка для генерации QR-кода
 
         }
 
@@ -43,17 +43,19 @@ namespace qr_code
             {
                 if (colorDialog.ShowDialog() == DialogResult.OK)
                 {
-                    qrColor = colorDialog.Color; // Устанавливаем выбранный цвет
+                    qrColor = colorDialog.Color; 
                 }
             }
         }
 
+        private DatabaseHelper dbHelper = new DatabaseHelper();
         private void GenerateQRCode()
         {
             try
-            {
-                string qrtext = textBox1.Text; // Считываем текст из TextBox'a
-
+            { 
+            string qrtext = textBox1.Text; 
+            string username = userTextBox.Text; 
+                dbHelper.SaveQRCode(username, qrtext); 
                 if (string.IsNullOrWhiteSpace(qrtext))
                 {
                     MessageBox.Show("Введите текст для генерации QR-кода.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -61,12 +63,12 @@ namespace qr_code
                 }
 
                 QRCodeEncoder encoder = new QRCodeEncoder();
-                encoder.QRCodeForegroundColor = qrColor; // Устанавливаем цвет QR-кода
-                encoder.QRCodeBackgroundColor = Color.White; // Устанавливаем цвет фона
-                encoder.QRCodeScale = (int)sizeSelector.Value / 10; // Устанавливаем масштаб QR-кода
+                encoder.QRCodeForegroundColor = qrColor; // 
+                encoder.QRCodeBackgroundColor = Color.White; 
+                encoder.QRCodeScale = (int)sizeSelector.Value / 10; 
 
-                Bitmap qrcode = encoder.Encode(qrtext); // Кодируем текст в переменную qrcode класса Bitmap
-                pictureBox1.Image = qrcode as Image; // pictureBox выводит qrcode как изображение.
+                Bitmap qrcode = encoder.Encode(qrtext); 
+                pictureBox1.Image = qrcode as Image; 
             }
             catch (Exception ex)
             {
@@ -76,7 +78,7 @@ namespace qr_code
 
         private void GenerateButton_Click(object sender, EventArgs e)
         {
-            GenerateQRCode(); // Генерируем QR-код при нажатии кнопки
+            GenerateQRCode(); 
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -109,6 +111,11 @@ namespace qr_code
             {
                 MessageBox.Show($"Ошибка при декодировании QR-кода: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
